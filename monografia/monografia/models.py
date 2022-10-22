@@ -1,0 +1,51 @@
+from django.db import models
+
+class Autores(models.Model):
+    nome = models.CharField(max_length=200,null=False)
+    curso = models.CharField(max_length=200,null=False)
+    universidade = models.CharField(max_length=200,null=False)
+    email = models.CharField(max_length=200,null=False)
+    lattes = models.CharField(max_length=300,null=False)
+    g_scholar = models.CharField(max_length=300,null=False)
+    r_gate = models.CharField(max_length=300,null=False)
+    linkedin = models.CharField(max_length=300,null=False)
+    orcid = models.CharField(max_length=300,null=False)
+    github = models.CharField(max_length=300,null=False)
+
+class CoAutores(models.Model):
+    nome = models.CharField(max_length=200,null=False)
+    curso = models.CharField(max_length=200,null=False)
+    universidade = models.CharField(max_length=200,null=False)
+    email = models.CharField(max_length=200,null=False)
+    lattes = models.CharField(max_length=300,null=False)
+    g_scholar = models.CharField(max_length=300,null=False)
+    r_gate = models.CharField(max_length=300,null=False)
+    linkedin = models.CharField(max_length=300,null=False)
+    orcid = models.CharField(max_length=300,null=False)
+    github = models.CharField(max_length=300,null=False)
+
+class Discentes(models.Model):
+    nome = models.CharField(max_length=200,null=False)
+    curso = models.CharField(max_length=200,null=False)
+    universidade = models.CharField(max_length=200,null=False)
+    email = models.CharField(max_length=200,null=False)
+    lattes = models.CharField(max_length=300,null=False)
+    g_scholar = models.CharField(max_length=300,null=False)
+    r_gate = models.CharField(max_length=300,null=False)
+    linkedin = models.CharField(max_length=300,null=False)
+    orcid = models.CharField(max_length=300,null=False)
+    github = models.CharField(max_length=300,null=False)
+    teste = models.CharField(max_length=200,null=False)
+
+class Monografias(models.Model):
+    nome = models.CharField(max_length=200,null=False)
+    titulo = models.CharField(max_length=200,null=False)
+    autor = models.CharField(max_length=200,null=False)
+    orientador = models.CharField(max_length=200,null=False)
+    coorientador = models.CharField(max_length=300,null=False)
+    data = models.CharField(max_length=300,null=False)
+    resumo = models.CharField(max_length=300,null=False)
+    palavrachave = models.CharField(max_length=300,null=False)
+    universidade = models.CharField(max_length=300,null=False)
+    curso = models.CharField(max_length=300,null=False)
+    linkpdf = models.CharField(max_length=300,null=False)
